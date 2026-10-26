@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>毛太通透了都看到了：每一条生成记录都摆在明面上</title>
+<meta name="keywords" content="毛太通透了都看到了,生成记录,任务状态,耗时统计,发布管理">
+<meta name="description" content="毛太通透了都看到了，是一个把每次生成任务从头到尾摊开给你看的工作台：网站名、网址、开始与结束时间、模型、账号、耗时、字数、状态与上传结果，全部以清晰的列表逐行呈现。你可以按状态筛选失败任务并一键重试、换模型或删除，紫色徽章标识账号来源，朱红色标出耗时与字数等关键数字，浅薄荷绿高亮当前行。">
+<link rel="canonical" href="https://mtttld.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="毛太通透了都看到了：每一条生成记录都摆在明面上">
+<meta property="og:description" content="毛太通透了都看到了，是一个把每次生成任务从头到尾摊开给你看的工作台：网站名、网址、开始与结束时间、模型、账号、耗时、字数、状态与上传结果，全部以清晰的列表逐行呈现。你可以按状态筛选失败任务并一键重试、换模型或删除，紫色徽章标识账号来源，朱红色标出耗时与字数等关键数字，浅薄荷绿高亮当前行。无论你同时跑几十个站点还是只盯一条记录，这里都让信息一目了然，省去来回翻查的时间，效率导向、克制专业，适合需要快速浏览与决策的日常使用场景。">
+<meta property="og:url" content="https://mtttld.pages.dev/">
+<meta property="og:site_name" content="毛太通透了都看到了">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="毛太通透了都看到了：每一条生成记录都摆在明面上">
+<meta name="twitter:description" content="毛太通透了都看到了：把每次生成任务的网站、时间、模型、账号、耗时、状态全部摊开呈现，失败可重试、可换模型，信息一目了然，效率导向的记录工作台。">
+<link rel="stylesheet" href="assets/vendor/materialize/css/materialize.min.css">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"毛太通透了都看到了","url":"https://mtttld.pages.dev/","description":"毛太通透了都看到了：把每次生成任务的网站名、网址、时间、模型、账号、耗时、字数、状态与上传结果逐行摊开呈现，支持重试、换模型、删除等操作，信息一目了然的记录工作台。","inLanguage":"zh-CN","publisher":{"@type":"Organization","name":"毛太通透了都看到了"}}
+</script>
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<script type="application/ld+json">{"@context":"https://ziyuan.baidu.com/contexts/cambrian.jsonld","@id":"https://mtttld.pages.dev/","title":"毛太通透了都看到了：每一条生成记录都摆在明面上","pubDate":"2026-10-25T13:59:32","upDate":"2026-10-25T13:59:32"}</script>
+<link rel="stylesheet" href="assets/n779m8.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="#top"><span class="logo-mark">透</span>毛太通透了都看到了</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#top" class="active">首页</a>
+      <a href="#shipin">生成实况</a>
+      <a href="#huancun">状态排查</a>
+      <a href="#zhanghao">账号与模型</a>
+      <a href="#richeng">更新记录</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#shuju" class="btn btn-ghost btn-sm">查看数据</a>
+      <a href="#cta" class="btn btn-primary btn-sm">获取工作台</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="打开菜单">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">● 实时记录 · 全量可见</span>
+    <h1>毛太通透了都看到了，<br>每条生成记录都<em>摆在明面上</em></h1>
+    <p class="sub">网站名、网址、起止时间、模型、账号、耗时、字数、状态、上传结果——十列信息一屏铺开，成功失败一眼分辨，失败的任务重试、换模型、删除都在行内完成。</p>
+    <div class="hero-actions">
+      <a href="#shuju" class="btn btn-primary">进入记录列表</a>
+      <a href="#texing" class="btn btn-ghost">看字段明细</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><b>10 列</b><span>单行完整呈现任务全貌</span></div>
+      <div class="stat"><b><em>15m28s</em></b><span>最长耗时也标得清清楚楚</span></div>
+      <div class="stat"><b>3 秒</b><span>定位一条失败记录</span></div>
+      <div class="stat"><b>0 遮挡</b><span>不折叠、不省略、不打码</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 主列表 -->
+<section id="shuju">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">RECORDS</span>
+      <h2>今天的生成任务，全部摊在一张表里</h2>
+      <p>按状态快速筛选，选中的行以浅薄荷绿高亮；每行的关键数字用朱红标出，先看重点再决定动作。</p>
+    </div>
+    <div class="board">
+      <div class="board-toolbar">
+        <div class="filters">
+          <button class="chip on">全部 8</button>
+          <button class="chip">生成中 2</button>
+          <button class="chip">已上传 4</button>
+          <button class="chip">生成失败 1</button>
+          <button class="chip">待上传 1</button>
+        </div>
+        <span class="meta">最近刷新：21:58:04 · 共 8 条记录</span>
+      </div>
+      <div class="table-wrap">
+        <table class="records">
+          <thead>
+            <tr><th></th><th>网站</th><th>网址</th><th>时间</th><th>模型</th><th>账号</th><th>耗时</th><th>状态</th><th>上传</th><th style="text-align:right">操作</th></tr>
+          </thead>
+          <tbody>
+            <tr class="hl">
+              <td><input type="checkbox" aria-label="选择该行"></td>
+              <td><div class="rec-name">毛太通透了都看到了</div><div class="rec-sub">首页 · 主站点</div></td>
+              <td><span class="rec-url">mtttld.pages.dev</span></td>
+              <td><div class="time-group"><span class="lbl">开始</span> 10-17 21:36<br><span class="lbl">结束</span> 10-17 21:51<br><span class="lbl">用时</span> 生成 15m28s</div></td>
+              <td><span class="model-pill">deepseek-flash</span></td>
+              <td><div class="account"><span class="badge-gh">GH</span><span class="acc-name">sampsonallison9711</span></div></td>
+              <td><span class="metric">生成 15m28s<span class="dot">·</span>3746 字</span></td>
+              <td><span class="status-pill status-fail">生成失败</span></td>
+              <td><span class="status-pill status-wait">未上传</span></td>
+              <td><div class="row-actions"><button class="btn-outline">重试</button><button class="btn-outline">换模型</button><button class="btn-danger-text">删除</button></div></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" aria-label="选择该行"></td>
+              <td><div class="rec-name">透镜频道站</div><div class="rec-sub">频道矩阵 · 分站</div></td>
+              <td><span class="rec-url">tjpd.pages.dev</span></td>
+              <td><div class="time-group"><span class="lbl">开始</span> 10-17 20:02<br><span class="lbl">结束</span> 10-17 20:14<br><span class="lbl">用时</span> 生成 12m07s</div></td>
+              <td><span class="model-pill">qwen-turbo</span></td>
+              <td><div class="account"><span class="badge-gh">GH</span><span class="acc-name">mira_hollis88</span></div></td>
+              <td><span class="metric">生成 12m07s<span class="dot">·</span>2980 字</span></td>
+              <td><span class="status-pill status-ok">已完成</span></td>
+              <td><span class="status-pill status-ok">已上传</span></td>
+              <td><div class="row-actions"><button class="btn-outline">查看</button><button class="btn-outline">重新生成</button><button class="btn-danger-text">删除</button></div></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" aria-label="选择该行"></td>
+              <td><div class="rec-name">状态速查小站</div><div class="rec-sub">工具页 · 独立部署</div></td>
+              <td><span class="rec-url">ztsq.pages.dev</span></td>
+              <td><div class="time-group"><span class="lbl">开始</span> 10-17 19:44<br><span class="lbl">结束</span> —<br><span class="lbl">用时</span> 进行中 06m31s</div></td>
+              <td><span class="model-pill">deepseek-flash</span></td>
+              <td><div class="account"><span class="badge-gh">GH</span><span class="acc-name">kelvin.zhou.dev</span></div></td>
+              <td><span class="metric">进行中 06m31s</span></td>
+              <td><span class="status-pill status-ok">生成中</span></td>
+              <td><span class="status-pill status-wait">未上传</span></td>
+              <td><div class="row-actions"><button class="btn-outline">暂停</button><button class="btn-outline">换模型</button><button class="btn-danger-text">删除</button></div></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" aria-label="选择该行"></td>
+              <td><div class="rec-name">明面清单站</div><div class="rec-sub">列表页 · 静态发布</div></td>
+              <td><span class="rec-url">mmqd.pages.dev</span></td>
+              <td><div class="time-group"><span class="lbl">开始</span> 10-17 18:20<br><span class="lbl">结束</span> 10-17 18:31<br><span class="lbl">用时</span> 生成 11m02s</div></td>
+              <td><span class="model-pill">hunyan-lite</span></td>
+              <td><div class="account"><span class="badge-gh">GH</span><span class="acc-name">sampsonallison9711</span></div></td>
+              <td><span class="metric">生成 11m02s<span class="dot">·</span>2516 字</span></td>
+              <td><span class="status-pill status-ok">已完成</span></td>
+              <td><span class="status-pill status-wait">待上传</span></td>
+              <td><div class="row-actions"><button class="btn-outline">上传</button><button class="btn-outline">预览</button><button class="btn-danger-text">删除</button></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="board-foot">
+        <span>已选 0 条 · 每页 20 条</span>
+        <div class="pager"><button>‹</button><button class="on">1</button><button>2</button><button>›</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 字段说明 -->
+<section id="texing" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">FIELDS</span>
+      <h2>每一列都在说什么，一看就懂</h2>
+      <p>不需要翻文档，十列字段的含义直接写在这张表旁边。</p>
+    </div>
+    <div class="grid-4">
+      <div class="card"><div class="icon">目</div><h3>网站与网址</h3><p>站点名称加粗在前，一行小字标注它是首页、频道页还是工具页；网址用等宽字体原样呈现，方便复制核对。</p></div>
+      <div class="card"><div class="icon pu">钟</div><h3>时间三行组</h3><p>开始、结束、用时逐行堆叠，正在生成的任务结束位留空，用时一栏实时跳动，进度不用猜。</p></div>
+      <div class="card"><div class="icon rd">耗</div><h3>耗时与字数</h3><p>朱红色标出生成耗时和产出字数，超长的 15m28s 也不会被弱化——慢就是慢，摆在明面上。</p></div>
+      <div class="card"><div class="icon">态</div><h3>状态与上传</h3><p>浅红底标生成失败、浅灰底标未上传、浅绿底标已上传，胶囊标签两列分开，不混在一起猜。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 生成实况 -->
+<section id="shipin">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">LIVE</span>
+      <h2>生成实况：正在跑的任务一屏盯完</h2>
+      <p>多站点并行时最怕的不是慢，是不知道哪个卡住了。实况区把进行中的任务单独拎出来，用时一直在走的就是还在跑。</p>
+    </div>
+    <div class="grid-3">
+      <div class="card"><div class="icon">▶</div><h3>用时实时跳动</h3><p>进行中的任务按秒刷新用时，06m31s 还是 14m59s，一眼判断是正常速度还是该重试了。</p></div>
+      <div class="card"><div class="icon pu">⇄</div><h3>行内换模型</h3><p>某个模型今天状态不对，不用改配置文件，行内点「换模型」直接切，耗时和字数从新任务重新计。</p></div>
+      <div class="card"><div class="icon rd">■</div><h3>失败立刻标红</h3><p>任务一失败，状态列立刻变成浅红底红字，不用等批量结束才发现有站点没跑完。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 状态排查 -->
+<section id="huancun" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">TROUBLESHOOT</span>
+      <h2>状态排查：失败不藏，原因不绕</h2>
+      <p>失败的记录留着全部现场：哪个账号、哪个模型、跑了多久、卡在哪一步，重试前先看清楚。</p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="icon rd">!</div>
+        <h3>失败现场完整保留</h3>
+        <p>「毛太通透了都看到了」这条 15m28s 的失败记录就是例子：deepseek-flash 模型、sampsonallison9711 账号、3746 字产出、未上传——所有信息原样保留，你可以先换账号再重试，也可以直接换模型从头跑。</p>
+      </div>
+      <div class="card">
+        <div class="icon">↻</div>
+        <h3>重试、换模型、删除</h3>
+        <p>三个动作都在行内：重试沿用原参数再跑一次；换模型保留站点配置只切换引擎；删除则整行清掉，不留半截残页。按钮靠右成组，误触概率低。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 账号与模型 -->
+<section id="zhanghao">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">ACCOUNTS</span>
+      <h2>账号与模型：谁在跑、用什么跑</h2>
+      <p>紫色 GH 徽章标识账号来源，账号名和模型名逐行对应，多账号并行也不会张冠李戴。</p>
+    </div>
+    <div class="grid-3">
+      <div class="card"><div class="icon pu">GH</div><h3>来源徽章</h3><p>每个账号带一枚彩色字母徽章，紫底 GH 一眼认出仓库来源，扫一列就知道分布。</p></div>
+      <div class="card"><div class="icon">⚙</div><h3>模型标签</h3><p>deepseek-flash、qwen-turbo、hunyan-lite 等模型以描边胶囊呈现，同页混跑不混淆。</p></div>
+      <div class="card"><div class="icon">≡</div><h3>一一对应</h3><p>账号列与模型列分开放，谁用哪个模型跑的、跑了几条，横向扫过去就有答案。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 数据一览 -->
+<section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">OVERVIEW</span>
+      <h2>毛太通透了都看到了本周数据一览</h2>
+      <p>列表之外再给一组汇总数字，判断整体节奏不用逐行加总。</p>
+    </div>
+    <div class="grid-4">
+      <div class="stat"><b>47</b><span>本周完成任务数</span></div>
+      <div class="stat"><b><em>93%</em></b><span>一次生成成功率</span></div>
+      <div class="stat"><b>8m42s</b><span>平均生成耗时</span></div>
+      <div class="stat"><b>121k</b><span>本周累计产出字数</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 更新记录 -->
+<section id="richeng">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">CHANGELOG</span>
+      <h2>毛太通透了都看到了更新记录</h2>
+      <p>工作台本身的迭代，也照旧摆在明面上。</p>
+    </div>
+    <div class="feed">
+      <article class="feed-item">
+        <span class="feed-date">10-17</span>
+        <div class="feed-body">
+          <h3>状态筛选加入「待上传」独立档位</h3>
+          <p>之前待上传和未上传混在一档，容易漏发；现在两档分开，发布环节不再卡壳。</p>
+          <span class="status-pill status-ok">已上线</span>
+        </div>
+      </article>
+      <article class="feed-item">
+        <span class="feed-date">10-14</span>
+        <div class="feed-body">
+          <h3>耗时列支持超长任务标色提醒</h3>
+          <p>超过 15 分钟的任务，耗时数字自动加深标红，慢任务自己会「喊话」。</p>
+          <span class="status-pill status-ok">已上线</span>
+        </div>
+      </article>
+      <article class="feed-item">
+        <span class="feed-date">10-09</span>
+        <div class="feed-body">
+          <h3>行内操作组新增「暂停」</h3>
+          <p>生成中的任务可以临时暂停，用时停止累计，恢复后接着跑，不再只能干等或整个删掉。</p>
+          <span class="status-pill status-ok">已上线</span>
+        </div>
+      </article>
+      <article class="feed-item">
+        <span class="feed-date">10-02</span>
+        <div class="feed-body">
+          <h3>窄屏视图改为纵向卡片堆叠</h3>
+          <p>手机上不再横向拖动表格，十列信息按优先级折成卡片，状态和操作按钮始终可见。</p>
+          <span class="status-pill status-ok">已上线</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 场景 -->
+<section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">SCENES</span>
+      <h2>什么人在用这张表</h2>
+      <p>从单站点到几十个站并行，列表都是同一个看法。</p>
+    </div>
+    <div class="grid-3">
+      <div class="card"><div class="icon">1</div><h3>单站精修</h3><p>只跑一个站点时，盯住一行记录的用时与字数变化，重试换模型都在原地完成。</p></div>
+      <div class="card"><div class="icon pu">9</div><h3>多站并行</h3><p>九个站同时跑，按状态筛出「生成中」，谁快谁慢、谁卡住了，一屏对比。</p></div>
+      <div class="card"><div class="icon rd">✓</div><h3>批量收尾</h3><p>批量跑完一批后，筛出失败行逐条处理，剩下的按「待上传」清单依次发布。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="tag">FAQ</span>
+      <h2>毛太通透了都看到了常见问题</h2>
+    </div>
+    <details class="faq-item" open>
+      <summary>生成失败后，字数统计还算数吗？</summary>
+      <div class="faq-body">算数。失败记录里保留的 3746 字是失败前实际产出的内容量，方便你判断是中途卡住还是接近完成时出错，从而决定是重试还是换模型。</div>
+    </details>
+    <details class="faq-item">
+      <summary>换模型之后，原来的耗时记录还在吗？</summary>
+      <div class="faq-body">在。换模型会生成一条新记录，原记录原样保留在列表里，包括旧的模型名、账号和耗时，两条可以横向对比。</div>
+    </details>
+    <details class="faq-item">
+      <summary>正在进行中的任务，用时为什么一直在变？</summary>
+      <div class="faq-body">耗时列对进行中的任务按秒实时累计，结束位显示「—」。一旦完成或失败，用时固定为最终数值，不再变化。</div>
+    </details>
+    <details class="faq-item">
+      <summary>删除操作能撤销吗？</summary>
+      <div class="faq-body">删除是行级操作，点击后该条记录连同其状态与上传信息一并清除，请先确认该站点不需要保留现场再操作。</div>
+    </details>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" style="padding-top:0">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h2>别再翻聊天记录找任务了</h2>
+        <p>把每一次生成摊开在一张表里：状态、耗时、账号、产出，全都看得到，全都管得住。</p>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a href="#shuju" class="btn btn-white">立即开始</a>
+        <a href="#faq" class="btn btn-line">了解细节</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#top"><span class="logo-mark">透</span>毛太通透了都看到了</a>
+        <p class="foot-desc">一张把生成任务摊开看的记录表：十列信息逐行呈现，失败不藏、耗时实标，效率导向的日常工作台。</p>
+      </div>
+      <div>
+        <h4>栏目</h4>
+        <ul class="foot-links">
+          <li><a href="#shuju">记录列表</a></li>
+          <li><a href="#shipin">生成实况</a></li>
+          <li><a href="#huancun">状态排查</a></li>
+          <li><a href="#zhanghao">账号与模型</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>频道</h4>
+        <ul class="foot-links">
+          <li><a href="#shipin">生成实况频道</a></li>
+          <li><a href="#huancun">状态排查频道</a></li>
+          <li><a href="#zhanghao">账号模型频道</a></li>
+          <li><a href="#richeng">更新记录频道</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>了解更多</h4>
+        <ul class="foot-links">
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#texing">字段说明</a></li>
+          <li><a href="#cta">获取工作台</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 毛太通透了都看到了 · 保留所有权利</span>
+      <span>mtttld.pages.dev</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/vendor/materialize/js/materialize.min.js"></script>
+<script>
+document.getElementById('menuToggle').addEventListener('click',function(){
+  document.getElementById('navLinks').classList.toggle('open');
+});
+document.querySelectorAll('.chip').forEach(function(c){
+  c.addEventListener('click',function(){
+    c.parentNode.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on');});
+    c.classList.add('on');
+  });
+});
+</script>
+</body>
+</html
+<div class="site-footer-inner">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a class="logo" href="#top"><span class="logo-mark">透</span>毛太通透了都看到了</a>
+      <p class="foot-desc">一张把生成任务摊开看的记录表：网站、时间、模型、账号、耗时、状态逐行呈现，失败不藏、耗时实标，效率导向的日常工作台。</p>
+      <div class="foot-badges">
+        <span class="foot-badge">实时记录</span>
+        <span class="foot-badge">全量可见</span>
+        <span class="foot-badge">行内操作</span>
+      </div>
+    </div>
+    <div class="foot-col">
+      <h4>栏目</h4>
+      <ul class="foot-links">
+        <li><a href="#shuju">记录列表</a></li>
+        <li><a href="#shipin">生成实况</a></li>
+        <li><a href="#huancun">状态排查</a></li>
+        <li><a href="#zhanghao">账号与模型</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>频道</h4>
+      <ul class="foot-links">
+        <li><a href="#shipin">生成实况频道</a></li>
+        <li><a href="#huancun">状态排查频道</a></li>
+        <li><a href="#zhanghao">账号模型频道</a></li>
+        <li><a href="#richeng">更新记录频道</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>了解更多</h4>
+      <ul class="foot-links">
+        <li><a href="#faq">常见问题</a></li>
+        <li><a href="#texing">字段说明</a></li>
+        <li><a href="#cta">获取工作台</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 毛太通透了都看到了 · 保留所有权利</span>
+    <span class="foot-tech">mtttld.pages.dev</span>
+  </div>
+</div>
+</footer>
+
+<script src="assets/vendor/materialize/js/materialize.min.js"></script>
+<script>
+document.getElementById('menuToggle').addEventListener('click', function () {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+document.querySelectorAll('.chip').forEach(function (c) {
+  c.addEventListener('click', function () {
+    c.parentNode.querySelectorAll('.chip').forEach(function (x) { x.classList.remove('on'); });
+    c.classList.add('on');
+  });
+});
+</script>
+</body>
+</html>
